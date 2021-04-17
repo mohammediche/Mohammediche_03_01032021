@@ -210,11 +210,13 @@ input[type=text]
 
 .Border_section
 {
+	
 	background-color: white;
 	border-radius: 20px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	width: 35%;
 	margin-bottom: 30px;
+	position: relative;
 }
 .Border_section img
 {
@@ -235,16 +237,16 @@ input[type=text]
 	transition: 0.2s ease;
 }
 
-/*.Border_section span
+.Border_section span
 {
 	position: absolute;
 	margin-top: 20px;
-	margin-left: 200px;
+	right: 7px;
 	
     padding: 5px 10px;
 	background-color: #99E2D0;
 	
-} */
+} 
 
 
                        /*************Footer*************/
@@ -257,12 +259,10 @@ input[type=text]
  #background-footer h3
  {
  	color: white;
- }
- footer h3
- {
  	margin: 0;
  	padding-top: 30px;
  }
+ 
 
  .Flex_element_footer
  {

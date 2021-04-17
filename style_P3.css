@@ -5,14 +5,14 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('Roboto/Roboto-Regular.ttf');
+    font-family: 'Roboto-Medium';
+    src: url('Roboto/Roboto-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
 body
 {
-	font-family: 'Roboto-Regular', sans-sérif;
+	font-family: 'Roboto-Medium', sans-sérif;
 	padding: 0;
 	margin: 0;
 }
@@ -24,10 +24,24 @@ body h1
 	margin-bottom: 10px;
 	
 }
+footer h3
+{
+	font-family: 'Shrikhand-Regular', sans-sérif;
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+	
+}
+
+
 h2
 {
 	font-size: 1.3em;
 	font-weight: bold;
+}
+h3
+{
+	font-size: 1.1em;
 }
 p
 {
@@ -45,7 +59,7 @@ a
 	margin-right: 80px;
 
 }
-.fas
+ .fas
 {
 	color: grey;
 }
@@ -137,6 +151,11 @@ input[type=text]
 	box-shadow: 4px 5px 8px 1px rgba(0,0,0,0.10);
 	align-items: center;
 }
+.Border_fonction:hover
+{
+    background-color:#F1E7FC;
+}
+
 .Border_fonction p
 {
 	margin-left: 25px;
@@ -160,18 +179,33 @@ input[type=text]
 #premiereSection
 {
 	background-color: #F2F2F2;
+	border-radius: 20px;
 	width: 70%;
 	margin: auto;
+	margin-top: 50px;
 
 }
+#Flex_Border
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
 #premiereSection h3
 {
     margin: 10px 15px 5px 10px;
 }
+
 #premiereSection p
 {
     margin: 0px 15px 5px 10px;
     padding-bottom: 10px;
+}
+#premiereSection h2
+{
+	margin: 0px;
+	padding: 30px 10px 30px 20px;
 }
 
 .Border_section
@@ -180,12 +214,19 @@ input[type=text]
 	border-radius: 20px;
 	box-shadow: 0 0 6px 3px #b1b1b14b;
 	width: 35%;
+	margin-bottom: 30px;
 }
 .Border_section img
 {
 	width: 100%;
+	height: 210px;
 	border-radius: 20px 20px 0 0;
+	object-fit: cover;
 
+}
+.Border_section p
+{
+	opacity: 0.5;
 }
 
 .Border_section:hover
@@ -194,12 +235,61 @@ input[type=text]
 	transition: 0.2s ease;
 }
 
+/*.Border_section span
+{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 200px;
+	
+    padding: 5px 10px;
+	background-color: #99E2D0;
+	
+} */
+
+
+                       /*************Footer*************/
+
+ #background-footer
+ {
+ 	background-color: #3B3B3B;
+ 	margin-top: 50px;
+ }
+ #background-footer h3
+ {
+ 	color: white;
+ }
+ footer h3
+ {
+ 	margin: 0;
+ 	padding-top: 30px;
+ }
+
+ .Flex_element_footer
+ {
+ 	display: flex;
+ 	padding: 30px;
+
+ }
+ #Footer_end
+ {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+ }
 
 
 
 
-
-
+footer .fas
+{
+	color: white;
+	padding-right: 10px;
+}
+footer div a
+{
+    color: white;
+}
 
 
 

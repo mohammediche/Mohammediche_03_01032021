@@ -15,6 +15,7 @@ body
 	font-family: 'Roboto-Medium', sans-sérif;
 	padding: 0;
 	margin: 0;
+    
 }
 body h1
 {
@@ -28,7 +29,6 @@ body h1
 
 h2
 {
-    font-size: 1.3em;
     font-weight: bold;
     margin: 0;
 }
@@ -51,38 +51,46 @@ a
 header
 {
     box-shadow: 0 3px 4px rgb(140 140 140 / 30%);
+    width: 90%;
+    margin: auto;
 }
 
 
 /***********H2 début************/
+section
+{
+    width: 90%;
+    margin: auto;
+}
+
 section img
 {
-   width: 80%;
+   width: 100%;
+   height: 800px;
+   object-fit: cover;
    border-radius: 50px 50px 0 0;
    background-repeat: no-repeat;
+   margin-top: 40px;
     
 }
-.first_element h2
+.first_title h2
 {
     font-family: 'Shrikhand-Regular', sans-sérif;
     font-size: 2.3em;
-}
-.image
-{
-    
-    text-align: center;
-    margin-top: 40px;
+    letter-spacing: 2px;
 }
 
-.first_element
+
+.first_title
 {
     border-radius: 50px 50px 0 0;
     width: 42%;
-    
     background-color: #F4F4F4;
+    position: relative;
+    bottom: 85px;
     
 }
-.first_element h2
+.first_title h2
 {
     padding: 20px;
 }
@@ -90,10 +98,11 @@ section img
  /**************Section flex****************/
 #Flex_global h2
 {
-    font-weight: none;
-    text-align: start;
-    padding-bottom: 30px;
-    opacity: 0.3;
+   
+    text-align: left;
+    border-bottom: 4px solid #99e2d0;
+    width: 17%;
+    padding-bottom: 5px;
 }
 
 
@@ -101,7 +110,7 @@ section img
 .Border_section
 {
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     padding: 15px 10px;
     background: white;
     box-shadow: 0 0 6px 3px #b1b1b14b;
@@ -128,14 +137,26 @@ section img
     padding: 20px;
 
 }
-#wrapper
+/*#ToutLesMenus
 {
-    margin-left: 140px;
-    margin-right: 140px;
+   
     position: relative;
     top: -150px;  
 
+}*/
+
+.petit_div
+{
+    display: flex;
+    justify-content: space-between;
+    
 }
+
+.With_Border
+{
+    width: 32%;
+}
+
 
 
 
@@ -145,22 +166,24 @@ section img
 #background-footer
  {
     background-color: #3B3B3B;
-    margin-top: 50px;
+
  }
  #background-footer h3
  {
     font-family: 'Shrikhand-Regular', sans-sérif;
     color: white;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 40px;
     text-align: center;
  }
 
 
- #Test_color
+ #background_color_withButton
 {
     background-color: #F4F4F4;
     text-align: center;
+    position: relative;
+    margin-top: -100px;
 }
 
 

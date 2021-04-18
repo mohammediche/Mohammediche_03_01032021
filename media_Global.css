@@ -1,0 +1,52 @@
+@media screen and (max-width: 1265px )
+{
+	header
+	{
+		width: 100%;
+	}
+	section
+	{
+		width: 100%;
+	}
+	.first_title
+	{
+        width: 100%;
+	}
+	#Flex_global
+	{
+		display: block;
+	}
+	.With_Border
+	{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	
+
+@media screen and (max-width: 600px )
+{
+	section img
+	{
+		height: 400px;
+	}
+	.first_title h2
+	{ 
+		font-size: 2em;
+
+	}
+	#Footer_end
+	{
+		display: block;
+	}
+
+	#background-footer h3
+	{
+		text-align:left;
+		padding-left: 30px;
+	}
+	.Flex_element_footer
+	{
+		padding: 10px 30px;
+	}
+}

@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Shrikhand-Regular';
-    src: url('Sharikhand/Shrikhand-Regular.ttf');
+    src: url('../police/Sharikhand/Shrikhand-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url('Roboto/Roboto-Medium.ttf');
+    src: url('../police/Roboto/Roboto-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,6 +54,13 @@ header
     width: 90%;
     margin: auto;
 }
+header .fas
+{
+    font-size: 1.4em;
+    position: absolute;
+    top: 40px;
+    right: 90%;
+}
 
 
 /***********H2 début************/
@@ -73,6 +80,15 @@ section img
    margin-top: 40px;
     
 }
+
+ #background_color_withButton
+{
+    background-color: #F4F4F4;
+    text-align: center;
+    position: relative;
+    margin-top: -100px;
+}
+
 .first_title h2
 {
     font-family: 'Shrikhand-Regular', sans-sérif;
@@ -135,28 +151,35 @@ section img
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    transition-delay: 0.7s;
 
 }
-/*#ToutLesMenus
-{
-   
-    position: relative;
-    top: -150px;  
-
-}*/
-
-.petit_div
-{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
 .With_Border
 {
     width: 32%;
 }
 
+
+/*.petit_div p::after
+{
+    content: '25€';
+    float: right;
+
+}*/
+.With_Border p::after
+{
+    content: attr(data-count);
+    float: right;
+}
+
+/*autre methode */
+
+/*.petit_div
+{
+    display: flex;
+    justify-content: space-between;
+    
+}*/
 
 
 
@@ -176,15 +199,6 @@ section img
     padding-top: 40px;
     text-align: center;
  }
-
-
- #background_color_withButton
-{
-    background-color: #F4F4F4;
-    text-align: center;
-    position: relative;
-    margin-top: -100px;
-}
 
 
  .Flex_element_footer
@@ -227,6 +241,20 @@ button
     margin-bottom: 50px;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

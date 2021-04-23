@@ -26,9 +26,15 @@
 
 @media screen and (max-width: 600px )
 {
+	body h1
+	{
+		margin-bottom: 0px;
+	}
 	section img
 	{
 		height: 400px;
+		margin-top: 0px;
+		border-radius: 0px;
 	}
 	.first_title h2
 	{ 
@@ -49,4 +55,23 @@
 	{
 		padding: 10px 30px;
 	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

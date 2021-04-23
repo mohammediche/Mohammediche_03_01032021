@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Shrikhand-Regular';
-    src: url('Sharikhand/Shrikhand-Regular.ttf');
+    src: url('../police/Sharikhand/Shrikhand-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url('Roboto/Roboto-Medium.ttf');
+    src: url('../police/Roboto/Roboto-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -91,6 +91,7 @@ input[value]
 	font-weight: bold;
 }
 
+
 .fa-map-marker-alt
 {
 	margin-right: 10px;
@@ -127,6 +128,14 @@ input[value]
 	margin-top: 25px;
 	cursor: pointer; 
 	box-shadow: 0 2px 3px 3px #b1b1b14b;
+	transition: transform 0.5s;
+
+}
+#center_element button:hover
+{
+	opacity: 0.95;
+	transform: scale(1.05);
+	transition: transform 0.5s;
 }
 
 /*************aside**************/
@@ -232,8 +241,9 @@ input[value]
 
 .Border_section:hover
 {
-	transform: scale(1.02);
+	transform: scale(1.02) rotate(2deg);
 	transition: 0.2s ease;
+
 }
 
 .Border_section span
@@ -241,9 +251,9 @@ input[value]
 	position: absolute;
 	margin-top: 20px;
 	right: 7px;
-	
     padding: 5px 10px;
 	background-color: #99E2D0;
+	color: #038c6a;
 	
 } 
 
@@ -284,14 +294,12 @@ footer .fas
 {
 	color: white;
 	padding-right: 10px;
+
 }
 footer div a
 {
     color: white;
 }
-
-
-
 
 
 

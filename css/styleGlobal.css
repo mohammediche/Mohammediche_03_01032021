@@ -73,7 +73,7 @@ section
 section img
 {
    width: 100%;
-   height: 800px;
+   height: 700px;
    object-fit: cover;
    border-radius: 50px 50px 0 0;
    background-repeat: no-repeat;
@@ -109,7 +109,39 @@ section img
 .first_title h2
 {
     padding: 20px;
+
 }
+.iconEffet
+{
+    position: absolute;
+    right: 50px;
+    top: 30%;
+}
+.iconEffet .fas
+{
+    color: transparent;
+    position: relative;
+    left: 36px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+.iconEffet:hover .fas
+{
+    opacity: 1;
+    transition: .5s;
+    cursor: pointer;
+}
+.iconEffet:hover .far
+{
+    opacity: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+
 
  /**************Section flex****************/
 #Flex_global h2
@@ -122,6 +154,41 @@ section img
 }
 
 
+/*.Border_section:nth-of-type(1)
+{
+    animation-delay: calc(.35s + 1*.15s);
+}
+.Border_section:nth-of-type(2)
+{
+    animation-delay: calc(.35s + 2*.15s);
+}
+.Border_section:nth-of-type(3)
+{
+    animation-delay: calc(.35s + 3*.15s);
+}
+.Border_section:nth-of-type(4) {
+    animation-delay: calc(.35s + 4*.15s);
+}*/
+
+.With_Border:nth-of-type(1)
+{
+    animation-delay: 300ms;
+}
+.With_Border:nth-of-type(2)
+{
+    animation-delay: 600ms;
+}
+.With_Border:nth-of-type(3)
+{
+    animation-delay: 900ms;
+}
+.With_Border
+{
+     animation: border-anime .9s ease-in-out forwards;
+     opacity: 0;
+}
+
+
 
 .Border_section
 {
@@ -131,6 +198,22 @@ section img
     background: white;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     text-align: start;
+    transform: translateY(500px);
+    opacity: 0;
+    animation: border-anime .9s ease-in-out forwards;
+}
+@keyframes border-anime
+{
+    0%{
+       transform: translateY(20px);
+    opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+    opacity: 1;
+    }
+}
+
    
 }
 
@@ -239,7 +322,13 @@ button
     cursor: pointer; 
     box-shadow: 0 2px 3px 3px #b1b1b14b; 
     margin-bottom: 50px;
+    transition: 700ms;
     
+}
+button:hover
+{
+    opacity: 0.85;
+    transform: scale(1.05);  
 }
 
 
@@ -248,7 +337,10 @@ button
 
 
 
+/***************Animation*****************/
 
+
+}
 
 
 

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1265px )
+@media screen and (max-width: 1290px )
 {
 	header
 	{
@@ -56,6 +56,14 @@
 		padding: 10px 30px;
 	}
 
+}
+@media screen and (max-width: 485px )
+{
+	.first_title h2
+	 {
+        font-size: 1.7em;
+	 }
+    
 }
 
 

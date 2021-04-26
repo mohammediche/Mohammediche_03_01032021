@@ -36,11 +36,17 @@ h3
 {
     font-size: 1.1em;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 p
 {
     padding: 0;
     margin:0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 a
 {
@@ -114,7 +120,7 @@ section img
 .iconEffet
 {
     position: absolute;
-    right: 50px;
+    right: 28px;
     top: 30%;
 }
 .iconEffet .fas
@@ -192,6 +198,9 @@ section img
 
 .Border_section
 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     border-radius: 15px;
     margin-top: 20px;
     padding: 15px 10px;
@@ -224,8 +233,15 @@ section img
 
 .Border_section span
 {
-    text-align: end;
+    margin: 15px 15px 0 15px;
 }
+
+.boxAnimation
+{
+    display: block;
+    overflow: hidden;
+}
+
 
 
 #Flex_global   /**IMPORTANT**/
@@ -243,27 +259,24 @@ section img
 }
 
 
-/*.petit_div p::after
+/*********Animation Box**************/
+.box
 {
-    content: '25€';
-    float: right;
-
-}*/
-.With_Border p::after
-{
-    content: attr(data-count);
-    float: right;
+    position: absolute;
+    top: 1%;
+    right: -17%;
+    color: #fff;
+    background-color: #99e2d0;
+    padding: 25px;
+    /*visibility: hidden;*/
+    border-radius: 0 15px 15px 0;
+    transition: transform 600ms ease-in-out;
 }
-
-/*autre methode */
-
-/*.petit_div
+.Border_section:hover .box
 {
-    display: flex;
-    justify-content: space-between;
-    
-}*/
-
+    transform: translateX(-100px) ; 
+     visibility: visible;
+}
 
 
 

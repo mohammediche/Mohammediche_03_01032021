@@ -65,6 +65,13 @@
 	 }
     
 }
+@media screen and (max-width: 300px )
+{
+	.first_title h2
+	 {
+        font-size: 1.5em;
+	 }
+}
 
 
 

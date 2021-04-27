@@ -204,23 +204,21 @@ section img
     justify-content: space-between;
     border-radius: 15px;
     margin-top: 20px;
-    padding: 15px 10px;
     background: white;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     text-align: start;
-    transform: translateY(500px);
     opacity: 0;
     animation: border-anime .9s ease-in-out forwards;
 }
 @keyframes border-anime
 {
     0%{
-       transform: translateY(20px);
-    opacity: 0;
+        transform: translateY(20px);
+        opacity: 0;
     }
     100%{
         transform: translateY(0);
-    opacity: 1;
+        opacity: 1;
     }
 }
 
@@ -232,20 +230,13 @@ section img
     opacity: 0.8;
 }
 
-.Border_section span
-{
-    margin: 15px 15px 0 15px;
-    transition: width 500ms ease-in-out;
-   
-    
-   
-}
 
 
 .boxAnimation
 {
     display: block;
     overflow: hidden;
+    padding: 15px 10px;
 }
 
 
@@ -267,39 +258,49 @@ section img
 /*********Animation Box**************/
 .box
 {
-    position: absolute;
-    top: 1%;
-    right: -20%;
-    color: #fff;
-    background-color: #99e2d0;
-    padding: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -18%;
     border-radius: 0 15px 15px 0;
-    transition: transform 600ms ease-in-out;
+    transition: 700ms;
+    /*Test*/
+    width: 35%;
 }
-.Border_section:hover .box
+.rotation-icon
 {
-    transform: translateX(-120%) ; 
-     visibility: visible;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
 }
 
-.fas
+
+.Border_section span
 {
-    transition: transform 800ms ease-in-out;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.Border_section:hover .box
+{
+    margin-right: 0%;   
+}
+
+.rotation-icon .fas
+{  
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+    transition: transform 500ms ease-in-out;
 }
 
 .Border_section:hover .fas
 {
-    transform: rotate(360deg);
-
+    transform: rotate(-360deg);
 }
-
-
-.Border_section:hover span
-{
-    width: 20%;
-    
-}
-
 
 
 

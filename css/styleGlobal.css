@@ -199,6 +199,7 @@ section img
 .Border_section
 {
     position: relative;
+    overflow: hidden; /***IMPORTANT***/
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
@@ -234,7 +235,12 @@ section img
 .Border_section span
 {
     margin: 15px 15px 0 15px;
+    transition: width 500ms ease-in-out;
+   
+    
+   
 }
+
 
 .boxAnimation
 {
@@ -250,9 +256,8 @@ section img
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    transition-delay: 0.7s;
-
 }
+
 .With_Border
 {
     width: 32%;
@@ -264,19 +269,37 @@ section img
 {
     position: absolute;
     top: 1%;
-    right: -17%;
+    right: -20%;
     color: #fff;
     background-color: #99e2d0;
     padding: 25px;
-    /*visibility: hidden;*/
     border-radius: 0 15px 15px 0;
     transition: transform 600ms ease-in-out;
 }
 .Border_section:hover .box
 {
-    transform: translateX(-100px) ; 
+    transform: translateX(-120%) ; 
      visibility: visible;
 }
+
+.fas
+{
+    transition: transform 800ms ease-in-out;
+}
+
+.Border_section:hover .fas
+{
+    transform: rotate(360deg);
+
+}
+
+
+.Border_section:hover span
+{
+    width: 20%;
+    
+}
+
 
 
 

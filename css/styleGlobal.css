@@ -357,7 +357,7 @@ button
     font-size: 1em;
     margin-top: 25px;
     cursor: pointer; 
-    box-shadow: 0 2px 3px 3px #b1b1b14b; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 50px;
     transition: 700ms;
     
@@ -365,7 +365,8 @@ button
 button:hover
 {
     opacity: 0.85;
-    transform: scale(1.05);  
+    transform: scale(1.05); 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
 }
 
 

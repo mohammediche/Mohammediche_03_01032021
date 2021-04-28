@@ -128,15 +128,16 @@ input[value]
 	font-size: 1em;
 	margin-top: 25px;
 	cursor: pointer; 
-	box-shadow: 0 2px 3px 3px #b1b1b14b;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	transition: transform 0.5s;
 
 }
 #center_element button:hover
 {
-	opacity: 0.95;
+	opacity: 0.9;
 	transform: scale(1.05);
 	transition: transform 0.5s;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 /*************aside**************/
@@ -163,6 +164,10 @@ input[value]
 .Border_fonction:hover
 {
     background-color:#F1E7FC;
+}
+.Border_fonction:hover .fas
+{
+	 color:#9356DC;
 }
 
 .Border_fonction p
@@ -236,6 +241,7 @@ input[value]
 	border-radius: 20px 20px 0 0;
 	object-fit: cover;
 
+
 }
 .Border_section p
 {
@@ -290,7 +296,6 @@ input[value]
     transition: .5s;
     cursor: pointer;
 }
-
 
                        /*************Footer*************/
 

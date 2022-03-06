@@ -7,6 +7,7 @@ Les technologies utilisées :
  - HTML5
  - CSS3
  - Git & Github
+
 Compétences évaluées: 
  - Mise en œuvre des effets CSS graphiques avancés
  - Mise en place une structure de navigation
